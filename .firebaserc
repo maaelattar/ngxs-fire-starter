@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firestarter-c2db4": {
+      "hosting": {
+        "firestarter": [
+          "firestarter-c2db4"
+        ]
+      }
+    }
+  }
+}

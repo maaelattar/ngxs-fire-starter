@@ -1,0 +1,19 @@
+<h1>Detail Page</h1>
+
+<mat-card>
+  <button mat-raised-button color="accent"
+          routerLink="/celebrities">BACK</button>
+</mat-card>
+
+<mat-card *ngIf="(selectedCelebrity$ | async) as celebrity">
+  <mat-card-header>
+    <mat-card-title>{{ celebrity.name }}</mat-card-title>
+    <mat-card-subtitle>Celebrity Details</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="celebrity.image" />
+  <mat-card-content>
+    <p>
+      {{ celebrity.bio }}
+    </p>
+  </mat-card-content>
+</mat-card>

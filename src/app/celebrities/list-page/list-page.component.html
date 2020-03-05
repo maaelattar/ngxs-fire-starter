@@ -1,0 +1,11 @@
+<h1>List Page</h1>
+
+<mat-nav-list role="list">
+  <h3 mat-subheader>Celebrities </h3>
+
+  <mat-list-item *ngFor="let celebrity of (celebrities$ | async)"
+                 [routerLink]="celebrity.id" role="listitem">
+    <mat-icon matListIcon>account_box</mat-icon>
+    <h3 matLine>{{ celebrity.name }}</h3>
+  </mat-list-item>
+</mat-nav-list>
